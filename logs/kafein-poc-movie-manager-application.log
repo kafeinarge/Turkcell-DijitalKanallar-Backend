@@ -1,0 +1,12 @@
+12-03-2022 17:48:40.630 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 11.0.2 on Macs-MBP.home with PID 35542 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
+12-03-2022 17:48:40.633 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
+12-03-2022 17:48:40.633 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+12-03-2022 17:52:14.779 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 11.0.2 on Macs-MBP.home with PID 35564 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
+12-03-2022 17:52:14.782 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
+12-03-2022 17:52:14.783 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+12-03-2022 17:55:20.228 [main] INFO  c.k.m.MovieManagerApplicationTests.logStarting - Starting MovieManagerApplicationTests using Java 14.0.1 on Macs-MBP.home with PID 35880 (started by mac in /Users/mac/Documents/poc/movie-manager)
+12-03-2022 17:55:20.228 [main] DEBUG c.k.m.MovieManagerApplicationTests.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
+12-03-2022 17:55:20.229 [main] INFO  c.k.m.MovieManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+12-03-2022 17:58:06.859 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 14.0.1 on Macs-MBP.home with PID 35994 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
+12-03-2022 17:58:06.862 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
+12-03-2022 17:58:06.862 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
