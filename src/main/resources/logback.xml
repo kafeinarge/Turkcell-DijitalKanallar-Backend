@@ -1,0 +1,126 @@
+<configuration>
+    <property name="LOG_PATH" value="logs"/>
+
+
+    <appender name="myLogFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/kafein-poc-movie-manager-application.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/archived/kafein-poc-movie-manager-application_%d{dd-MM-yyyy}.log</fileNamePattern>
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="myLogFileRoot"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/kafein-poc-movie-manager-root.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/archived/kafein-poc-movie-manager-root_%d{dd-MM-yyyy}.log</fileNamePattern>
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="hibernateLogFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/kafein-poc-movie-manager-hibernate.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/archived/kafein-poc-movie-manager-hibernate_%d{dd-MM-yyyy}.log</fileNamePattern>
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="hibernateTypeLogFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/kafein-poc-movie-manager-hibernate-type.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/archived/kafein-poc-movie-manager-hibernate-type_%d{dd-MM-yyyy}.log</fileNamePattern>
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="com.kafein" additivity="false" >
+        <level value="trace" />
+        <appender-ref ref="myLogFile" />
+    </logger>
+
+
+    <logger name="com.kafein" additivity="false" >
+        <level value="trace" />
+        <appender-ref ref="myLogFile" />
+    </logger>
+
+    <logger name="org.springframework" additivity="false" >
+        <level value="debug" />
+        <appender-ref ref="myLogFileRoot" />
+    </logger>
+
+    <logger name="org.springframework.transaction" additivity="false" >
+        <level value="warn" />
+        <appender-ref ref="myLogFileRoot" />
+    </logger>
+
+    <logger name="org.springframework.jdbc" additivity="false" >
+        <level value="warn" />
+        <appender-ref ref="myLogFileRoot" />
+    </logger>
+
+    <logger name="org.hibernate" additivity="false">
+        <level value="warn" />
+        <appender-ref ref="hibernateLogFile" />
+    </logger>
+
+    <logger name="org.hibernate.type" additivity="false">
+        <level value="trace" />
+        <appender-ref ref="hibernateTypeLogFile" />
+    </logger>
+
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" additivity="false">
+        <level value="trace" />
+        <appender-ref ref="hibernateTypeLogFile" />
+    </logger>
+
+    <logger name="org.hibernate.SQL" additivity="false">
+        <level value="trace" />
+        <appender-ref ref="hibernateLogFile" />
+    </logger>
+    <logger name="org.hibernate.id.SequenceGenerator" additivity="false">
+        <level value="warn" />
+        <appender-ref ref="hibernateLogFile" />
+    </logger>
+
+    <logger name="org.hibernate.tool.hbm2ddl" additivity="false">
+        <level value="warn" />
+        <appender-ref ref="hibernateLogFile" />
+    </logger>
+
+    <logger name="org.hibernate.cache" additivity="false">
+        <level value="warn" />
+        <appender-ref ref="hibernateLogFile" />
+    </logger>
+
+    <logger name="net.sf.ehcache" additivity="false">
+        <level value="warn" />
+        <appender-ref ref="myLogFileRoot" />
+    </logger>
+
+    <root>
+        <level value="warn" />
+        <appender-ref ref="myLogFileRoot" />
+    </root>
+</configuration>

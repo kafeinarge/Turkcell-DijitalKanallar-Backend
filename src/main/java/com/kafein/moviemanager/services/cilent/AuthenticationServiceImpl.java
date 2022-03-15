@@ -52,6 +52,7 @@ public class AuthenticationServiceImpl {
             return response;
         }
         response = new LoginResponse(token, session);
+        ResponseUtil.addResultIntoResponseObj(response, session);
         return response;
     }
 

@@ -1,10 +1,8 @@
 package com.kafein.moviemanager.services.cilent;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kafein.moviemanager.constants.TmdbApiConstants;
 import com.kafein.moviemanager.model.dto.model.AddRemoveMovieFavoriteList;
 import com.kafein.moviemanager.model.dto.model.AddRemoveMovieWatchList;
-import com.kafein.moviemanager.model.dto.model.Token;
 import com.kafein.moviemanager.model.dto.response.AccountResponse;
 import com.kafein.moviemanager.model.dto.response.FavoriteMovieResponse;
 import com.kafein.moviemanager.model.dto.response.Response;

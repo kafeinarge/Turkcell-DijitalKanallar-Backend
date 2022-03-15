@@ -39,6 +39,28 @@ public class WsLogService {
 
     /**
      *
+     * @param response
+     * @param serviceName
+     * @param serviceOperation
+     * @param serviceMethod
+     * @param uriVariables
+     */
+    public void createServiceLog(BaseResponse response, String serviceName, String serviceOperation, String serviceMethod, Object... uriVariables){
+        ServiceLog log = new ServiceLog();
+        log.setOutDate(new Date());
+        log.setServiceName(serviceName);
+        log.setServiceOperation(serviceOperation);
+        if (response != null && response.getResponseDesc() != null) {
+            log.setResultCode(String.valueOf(response.getResponseCode()));
+            log.setResultDesc(response.getResponseDesc());
+            log.setHeaderApplication("REST_WEB_SERVICE_" + serviceMethod);
+        }
+        MovieManagerUtil.convertJson(log, uriVariables, response);
+        activeMqSender.sendLogService(log);
+    }
+
+    /**
+     *
      * This method is used for get services
      *
      * @param response baseResponse

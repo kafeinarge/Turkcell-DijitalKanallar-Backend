@@ -20,9 +20,12 @@ public class ResponseUtil {
 
     public static void addResultIntoResponseObj(BaseResponse response, Response clientResponse){
 
-        if(clientResponse == null){
+        if(clientResponse == null || (clientResponse != null && clientResponse.isSuccess())){
             response.setResponseCode(ErrorCodeAndDesc.SUCCESS.getErrorCode());
             response.setResponseDesc(ErrorCodeAndDesc.SUCCESS.getErrorDesc());
+        } else if (clientResponse != null && !clientResponse.isSuccess() && clientResponse.getStatusMessage() == null){
+            response.setResponseCode(ErrorCodeAndDesc.GENERAL_ERROR.getErrorCode());
+            response.setResponseDesc(ErrorCodeAndDesc.GENERAL_ERROR.getErrorDesc());
         } else {
             response.setResponseCode(clientResponse.getStatusCode());
             response.setResponseDesc(clientResponse.getStatusMessage());

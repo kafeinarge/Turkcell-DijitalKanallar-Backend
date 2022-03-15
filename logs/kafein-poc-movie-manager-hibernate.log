@@ -1,24 +1,22 @@
-12-03-2022 17:48:43.556 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:48:43.562 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
-12-03-2022 17:48:43.567 [main] DEBUG org.hibernate.SQL.logStatement - create sequence hibernate_sequence start with 1 increment by 1
-12-03-2022 17:48:43.570 [main] DEBUG org.hibernate.SQL.logStatement - create table service_log (id bigint not null, header_application varchar(255), in_date timestamp, in_parameters clob, out_date timestamp, out_parameters clob, result_code varchar(255), result_desc varchar(255), service_name varchar(255), service_operation varchar(255), primary key (id))
-12-03-2022 17:48:44.648 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:48:44.651 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
-12-03-2022 17:52:16.895 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:52:16.897 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
-12-03-2022 17:52:16.899 [main] DEBUG org.hibernate.SQL.logStatement - create sequence hibernate_sequence start with 1 increment by 1
-12-03-2022 17:52:16.901 [main] DEBUG org.hibernate.SQL.logStatement - create table service_log (id bigint not null, header_application varchar(255), in_date timestamp, in_parameters clob, out_date timestamp, out_parameters clob, result_code varchar(255), result_desc varchar(255), service_name varchar(255), service_operation varchar(255), primary key (id))
-12-03-2022 17:52:17.758 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:52:17.760 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
-12-03-2022 17:55:23.192 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:55:23.196 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
-12-03-2022 17:55:23.199 [main] DEBUG org.hibernate.SQL.logStatement - create sequence hibernate_sequence start with 1 increment by 1
-12-03-2022 17:55:23.202 [main] DEBUG org.hibernate.SQL.logStatement - create table service_log (id bigint not null, header_application varchar(255), in_date timestamp, in_parameters clob, out_date timestamp, out_parameters clob, result_code varchar(255), result_desc varchar(255), service_name varchar(255), service_operation varchar(255), primary key (id))
-12-03-2022 17:55:24.750 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:55:24.754 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
-12-03-2022 17:58:10.320 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:58:10.325 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
-12-03-2022 17:58:10.329 [main] DEBUG org.hibernate.SQL.logStatement - create sequence hibernate_sequence start with 1 increment by 1
-12-03-2022 17:58:10.332 [main] DEBUG org.hibernate.SQL.logStatement - create table service_log (id bigint not null, header_application varchar(255), in_date timestamp, in_parameters clob, out_date timestamp, out_parameters clob, result_code varchar(255), result_desc varchar(255), service_name varchar(255), service_operation varchar(255), primary key (id))
-12-03-2022 17:58:11.409 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
-12-03-2022 17:58:11.413 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
+15-03-2022 10:25:01.735 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
+15-03-2022 10:25:01.740 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
+15-03-2022 10:25:01.744 [main] DEBUG org.hibernate.SQL.logStatement - create sequence hibernate_sequence start with 1 increment by 1
+15-03-2022 10:25:01.747 [main] DEBUG org.hibernate.SQL.logStatement - create table service_log (id bigint not null, header_application varchar(255), in_date timestamp, in_parameters clob, out_date timestamp, out_parameters clob, result_code varchar(255), result_desc varchar(255), service_name varchar(255), service_operation varchar(255), primary key (id))
+15-03-2022 10:28:13.366 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
+15-03-2022 10:28:13.517 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
+15-03-2022 10:28:23.421 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
+15-03-2022 10:28:23.425 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
+15-03-2022 10:28:23.428 [main] DEBUG org.hibernate.SQL.logStatement - create sequence hibernate_sequence start with 1 increment by 1
+15-03-2022 10:28:23.430 [main] DEBUG org.hibernate.SQL.logStatement - create table service_log (id bigint not null, header_application varchar(255), in_date timestamp, in_parameters clob, out_date timestamp, out_parameters clob, result_code varchar(255), result_desc varchar(255), service_name varchar(255), service_operation varchar(255), primary key (id))
+15-03-2022 10:49:57.319 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
+15-03-2022 10:49:57.483 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
+15-03-2022 10:50:07.034 [main] DEBUG org.hibernate.SQL.logStatement - drop table if exists service_log CASCADE 
+15-03-2022 10:50:07.038 [main] DEBUG org.hibernate.SQL.logStatement - drop sequence if exists hibernate_sequence
+15-03-2022 10:50:07.041 [main] DEBUG org.hibernate.SQL.logStatement - create sequence hibernate_sequence start with 1 increment by 1
+15-03-2022 10:50:07.043 [main] DEBUG org.hibernate.SQL.logStatement - create table service_log (id bigint not null, header_application varchar(255), in_date timestamp, in_parameters clob, out_date timestamp, out_parameters clob, result_code varchar(255), result_desc varchar(255), service_name varchar(255), service_operation varchar(255), primary key (id))
+15-03-2022 10:50:44.007 [org.springframework.jms.JmsListenerEndpointContainer#0-1] DEBUG org.hibernate.SQL.logStatement - call next value for hibernate_sequence
+15-03-2022 10:50:44.064 [org.springframework.jms.JmsListenerEndpointContainer#0-1] DEBUG org.hibernate.SQL.logStatement - insert into service_log (header_application, in_date, in_parameters, out_date, out_parameters, result_code, result_desc, service_name, service_operation, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+15-03-2022 10:51:16.109 [org.springframework.jms.JmsListenerEndpointContainer#0-2] DEBUG org.hibernate.SQL.logStatement - call next value for hibernate_sequence
+15-03-2022 10:51:16.111 [org.springframework.jms.JmsListenerEndpointContainer#0-2] DEBUG org.hibernate.SQL.logStatement - insert into service_log (header_application, in_date, in_parameters, out_date, out_parameters, result_code, result_desc, service_name, service_operation, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+15-03-2022 10:52:01.869 [org.springframework.jms.JmsListenerEndpointContainer#0-3] DEBUG org.hibernate.SQL.logStatement - call next value for hibernate_sequence
+15-03-2022 10:52:01.871 [org.springframework.jms.JmsListenerEndpointContainer#0-3] DEBUG org.hibernate.SQL.logStatement - insert into service_log (header_application, in_date, in_parameters, out_date, out_parameters, result_code, result_desc, service_name, service_operation, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)

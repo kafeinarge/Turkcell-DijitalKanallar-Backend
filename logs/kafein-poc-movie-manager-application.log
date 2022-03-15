@@ -1,12 +1,78 @@
-12-03-2022 17:48:40.630 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 11.0.2 on Macs-MBP.home with PID 35542 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
-12-03-2022 17:48:40.633 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
-12-03-2022 17:48:40.633 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
-12-03-2022 17:52:14.779 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 11.0.2 on Macs-MBP.home with PID 35564 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
-12-03-2022 17:52:14.782 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
-12-03-2022 17:52:14.783 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
-12-03-2022 17:55:20.228 [main] INFO  c.k.m.MovieManagerApplicationTests.logStarting - Starting MovieManagerApplicationTests using Java 14.0.1 on Macs-MBP.home with PID 35880 (started by mac in /Users/mac/Documents/poc/movie-manager)
-12-03-2022 17:55:20.228 [main] DEBUG c.k.m.MovieManagerApplicationTests.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
-12-03-2022 17:55:20.229 [main] INFO  c.k.m.MovieManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
-12-03-2022 17:58:06.859 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 14.0.1 on Macs-MBP.home with PID 35994 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
-12-03-2022 17:58:06.862 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
-12-03-2022 17:58:06.862 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2022 10:24:57.801 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 11.0.2 on Macs-MBP.home with PID 48181 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
+15-03-2022 10:24:57.807 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
+15-03-2022 10:24:57.808 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2022 10:25:03.934 [main] INFO  c.k.m.MovieManagerApplication.logStarted - Started MovieManagerApplication in 6.664 seconds (JVM running for 8.155)
+15-03-2022 10:28:19.937 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 11.0.2 on Macs-MBP.home with PID 48204 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
+15-03-2022 10:28:19.940 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
+15-03-2022 10:28:19.942 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2022 10:28:25.358 [main] INFO  c.k.m.MovieManagerApplication.logStarted - Started MovieManagerApplication in 5.91 seconds (JVM running for 7.095)
+15-03-2022 10:28:48.281 [http-nio-8080-exec-2] ERROR c.k.m.s.c.AuthenticationServiceImpl.validateLogin - Client validate login response get error!
+org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized: "{"success":false,"status_code":30,"status_message":"Invalid username and/or password: You did not provide a valid login."}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:437)
+	at com.kafein.moviemanager.services.cilent.AuthenticationServiceImpl.validateLogin(AuthenticationServiceImpl.java:81)
+	at com.kafein.moviemanager.services.cilent.AuthenticationServiceImpl.loginUser(AuthenticationServiceImpl.java:44)
+	at com.kafein.moviemanager.controller.UserController.loginUser(UserController.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15-03-2022 10:50:04.183 [main] INFO  c.k.m.MovieManagerApplication.logStarting - Starting MovieManagerApplication using Java 11.0.2 on Macs-MBP.home with PID 48308 (/Users/mac/Documents/poc/movie-manager/target/classes started by mac in /Users/mac/Documents/poc/movie-manager)
+15-03-2022 10:50:04.188 [main] DEBUG c.k.m.MovieManagerApplication.logStarting - Running with Spring Boot v2.6.4, Spring v5.3.16
+15-03-2022 10:50:04.191 [main] INFO  c.k.m.MovieManagerApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+15-03-2022 10:50:08.955 [main] INFO  c.k.m.MovieManagerApplication.logStarted - Started MovieManagerApplication in 5.2 seconds (JVM running for 6.196)
+15-03-2022 10:50:43.900 [http-nio-8080-exec-2] INFO  c.k.m.s.activemq.ActiveMqSender.sendLogService - sending with convertAndSend() to queue <ServiceLog(id=0, headerApplication=REST_WEB_SERVICE_POST, serviceName=ACCOUNT_CONTROLLER, serviceOperation=GET_ACCOUNT_DETAIL, resultCode=1000, resultDesc=Success, inDate=Tue Mar 15 10:50:43 EET 2022, inParameters=["0271470f1739a99f5760755ab835e8dd5ed40b34"], outDate=Tue Mar 15 10:50:43 EET 2022, outParameters={"responseCode":1000,"responseDesc":"Success","userName":"adaydreamer","accountId":12064572})>
+15-03-2022 10:51:16.100 [http-nio-8080-exec-3] INFO  c.k.m.s.activemq.ActiveMqSender.sendLogService - sending with convertAndSend() to queue <ServiceLog(id=0, headerApplication=REST_WEB_SERVICE_POST, serviceName=ACCOUNT_CONTROLLER, serviceOperation=GET_ACCOUNT_DETAIL, resultCode=1000, resultDesc=Success, inDate=Tue Mar 15 10:51:16 EET 2022, inParameters=["0271470f1739a99f5760755ab835e8dd5ed40b34","12064572"], outDate=Tue Mar 15 10:51:16 EET 2022, outParameters={"responseCode":1000,"responseDesc":"Success","movieList":[{"posterPath":"/iQK0pkTQC60XR3Zlu2pp8kujoqW.jpg","id":70160,"releaseDate":"2012-03-12","title":"The Hunger Games"},{"posterPath":"/ngpLhUccj6mlvAVpiIa7jUcFxhT.jpg","id":13387,"releaseDate":"2008-11-26","title":"Transporter 3"}]})>
+15-03-2022 10:52:01.864 [http-nio-8080-exec-4] INFO  c.k.m.s.activemq.ActiveMqSender.sendLogService - sending with convertAndSend() to queue <ServiceLog(id=0, headerApplication=REST_WEB_SERVICE_POST, serviceName=ACCOUNT_CONTROLLER, serviceOperation=GET_ACCOUNT_DETAIL, resultCode=1000, resultDesc=Success, inDate=Tue Mar 15 10:52:01 EET 2022, inParameters=["0271470f1739a99f5760755ab835e8dd5ed40b34","12064572",{"mediaId":13387,"watchList":false}], outDate=Tue Mar 15 10:52:01 EET 2022, outParameters={"responseCode":1000,"responseDesc":"Success"})>
