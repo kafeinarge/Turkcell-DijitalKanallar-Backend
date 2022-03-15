@@ -26,7 +26,7 @@ public class UserController {
     private WsLogService logService;
 
     @PostMapping("/login")
-    private LoginResponse loginUser(@RequestBody LoginRequest request){
+    public LoginResponse loginUser(@RequestBody LoginRequest request){
         LoginResponse response = new LoginResponse();
         try{
             response =  authenticationService.loginUser(request);
@@ -40,7 +40,7 @@ public class UserController {
     }
 
     @PostMapping("/logout")
-    private LogoutResponse logoutUser(@RequestBody LogoutRequest request){
+    public LogoutResponse logoutUser(@RequestBody LogoutRequest request){
         LogoutResponse response = new LogoutResponse();
         try{
             response =  authenticationService.deleteSession(request);
