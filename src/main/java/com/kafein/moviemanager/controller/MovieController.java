@@ -29,12 +29,12 @@ public class MovieController {
     private WsLogService logService;
 
     @GetMapping(value = "/imagine", produces = MediaType.IMAGE_JPEG_VALUE)
-    private byte[] getMovie(@RequestParam(name = "file_path") String filePath){
+    public byte[] getMovieImagine(@RequestParam(name = "file_path") String filePath){
         return movieService.getMovieImagine(filePath);
     }
 
     @GetMapping("/detail")
-    private MovieDetailResponse getMovie(@RequestParam(name = "movie_id") Integer movieId){
+    public MovieDetailResponse getMovie(@RequestParam(name = "movie_id") Integer movieId){
         MovieDetailResponse response = new MovieDetailResponse();
         try{
             response = movieService.getMovieDetail(movieId);
@@ -48,7 +48,7 @@ public class MovieController {
     }
 
     @GetMapping("/search")
-    private MovieSearchResponse searchMovie(@RequestParam(name = "query") String query){
+    public MovieSearchResponse searchMovie(@RequestParam(name = "query") String query){
         MovieSearchResponse response = new MovieSearchResponse();
         try{
             response = movieService.searchMovie(query);

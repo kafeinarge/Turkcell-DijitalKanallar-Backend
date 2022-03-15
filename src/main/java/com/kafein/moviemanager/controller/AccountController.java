@@ -26,7 +26,7 @@ public class AccountController {
     private WsLogService logService;
 
     @GetMapping("/detail")
-    private AccountDetailResponse getAccountDetail(@RequestParam(name = "session_id") String sessionId){
+    public AccountDetailResponse getAccountDetail(@RequestParam(name = "session_id") String sessionId){
         AccountDetailResponse response = new AccountDetailResponse();
         try{
             response = accountService.getAccount(sessionId);
@@ -40,7 +40,7 @@ public class AccountController {
     }
 
     @GetMapping("/favorite/movies")
-    private AccountFavoriteMoviesResponse getAccountFavoriteMovies(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId){
+    public AccountFavoriteMoviesResponse getAccountFavoriteMovies(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId){
         AccountFavoriteMoviesResponse response = new AccountFavoriteMoviesResponse();
         try{
             response = accountService.getAccountFavoriteMovies(sessionId, accountId);
@@ -54,7 +54,7 @@ public class AccountController {
     }
 
     @PostMapping("/favorite/add_remove")
-    private AccountAddRemoveMovieFavoriteListResponse addRemoveAccountFavoriteListMovie(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId, AccountAddRemoveMovieFavoriteListRequest request){
+    public AccountAddRemoveMovieFavoriteListResponse addRemoveAccountFavoriteListMovie(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId, AccountAddRemoveMovieFavoriteListRequest request){
         AccountAddRemoveMovieFavoriteListResponse response = new AccountAddRemoveMovieFavoriteListResponse();
         try{
             response = accountService.addRemoveAccountFavoriteListMovie(sessionId, accountId, request);
@@ -68,7 +68,7 @@ public class AccountController {
     }
 
     @GetMapping("/watch_list/movies")
-    private AccountWatchListMovieResponse getAccountWatchListMovies(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId){
+    public AccountWatchListMovieResponse getAccountWatchListMovies(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId){
         AccountWatchListMovieResponse response = new AccountWatchListMovieResponse();
         try{
             response = accountService.getAccountWatchListMovies(sessionId, accountId);
@@ -82,7 +82,7 @@ public class AccountController {
     }
 
     @PostMapping("/watch_list/add_remove")
-    private AccountAddRemoveMovieWatchListResponse addRemoveAccountWatchListMovies(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId, AccountAddRemoveMovieWatchListRequest request){
+    public AccountAddRemoveMovieWatchListResponse addRemoveAccountWatchListMovies(@RequestParam(name = "session_id") String sessionId, @RequestParam(name = "account_id") String accountId, AccountAddRemoveMovieWatchListRequest request){
         AccountAddRemoveMovieWatchListResponse response = new AccountAddRemoveMovieWatchListResponse();
         try{
             response = accountService.addRemoveAccountWatchListMovies(sessionId, accountId, request);
