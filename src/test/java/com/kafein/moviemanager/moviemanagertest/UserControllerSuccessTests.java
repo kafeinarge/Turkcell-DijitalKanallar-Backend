@@ -57,6 +57,9 @@ public class UserControllerSuccessTests {
                 .thenReturn(logoutResponse);
     }
 
+    /**
+     * User login service test
+     */
     @Test
     void loginUserTest(){
         LoginResponse response = userControllerMock.loginUser(MovieManagerTestUtil.createLoginRequest());
@@ -65,6 +68,9 @@ public class UserControllerSuccessTests {
         Assertions.assertNotNull(response.getRequestToken());
     }
 
+    /**
+     * User logout service test
+     */
     @Test
     void logoutUserTest(){
         LogoutResponse response = userControllerMock.logoutUser(MovieManagerTestUtil.createLogoutRequest());
